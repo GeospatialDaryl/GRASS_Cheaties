@@ -1,0 +1,3 @@
+g.copy raster=klamathBasinDEM@PERMANENT
+r.to.vect -v input=geomorphicForms@KlamBasin output=polyGeomorphForms type=area column=form
+r.null map=klamathBasinDEM@PERMANENT setnull=0
